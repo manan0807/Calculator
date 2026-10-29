@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./">
+        <span class="brand-mark">#</span>
+        <span>CALCULATOR</span>
+      </a>
+      <span class="topbar-label">SCIENTIFIC MODE</span>
+    </header>
+
+    <section class="workspace">
+      <section class="calculator panel">
+        <div class="calc-toolbar">
+          <div class="mode-switch">
+            <button class="mode-btn active" id="deg" type="button">DEG</button>
+            <button class="mode-btn" id="rad" type="button">RAD</button>
+          </div>
+          <div class="toolbar-actions">
+            <button class="icon-btn" id="copy" type="button">COPY</button>
+          </div>
+        </div>
+
+        <div class="display">
+          <div id="expression">0</div>
+          <div class="result-line">
+            <span>=</span>
+            <output id="result">0</output>
+          </div>
+          <p id="message">Ready</p>
+        </div>
+
+        <div class="keypad">
+          <button class="function" data-value="sin(">sin</button>
+          <button class="function" data-value="cos(">cos</button>
+          <button class="function" data-value="tan(">tan</button>
+          <button class="function" data-value="ln(">ln</button>
+          <button class="function" data-value="log(">log</button>
+
+          <button class="function" data-value="("> ( </button>
+          <button class="function" data-value=")"> ) </button>
+          <button class="function" data-value="sqrt(">√</button>
+          <button class="function" data-value="^2">x²</button>
+          <button class="function" data-value="^">xʸ</button>
+
+          <button class="function" data-value="π">π</button>
+          <button class="function" data-value="e">e</button>
+          <button class="function" data-value="!">n!</button>
+          <button class="function" data-value="%">%</button>
+          <button class="utility" id="backspace">DEL</button>
+
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button class="operator" data-value="/">÷</button>
+          <button class="operator" data-value="*">×</button>
+
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button class="operator" data-value="-">−</button>
+          <button class="operator" data-value="+">+</button>
+
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button class="utility" id="sign">±</button>
+          <button class="utility" id="ans">ANS</button>
+
+          <button data-value="0">0</button>
+          <button data-value=".">.</button>
+          <button class="utility" id="clear">AC</button>
+          <button class="equals" id="equals">=</button>
+        </div>
+      </section>
+
+      <aside class="history-panel panel">
+        <div class="history-header">
+          <h2>HISTORY<span>.</span></h2>
+          <button id="clear-history" class="utility">CLEAR</button>
+        </div>
+        <div id="history-list">
+          <p class="empty-history">No calculations yet.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
