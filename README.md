@@ -40,7 +40,7 @@ Calculator/
 1. Clone this repository:
 
    ```bash
-   git clone (https://manan0807.github.io/Calculator/)
+   git clone https://github.com/manan0807/calculator.git
    ```
 
 2. Open the project folder.
@@ -50,7 +50,7 @@ No additional dependencies or installations are required.
 
 ## 🌐 Live Demo
 
-[Try the Calculator]((https://manan0807.github.io/Calculator/))
+[Try the Calculator](https://manan0807.github.io/calculator/)
 
 ## 📸 Preview
 
